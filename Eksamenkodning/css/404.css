@@ -8,43 +8,18 @@
 }
 
 
-header{
-  background-color: white;
-  height: auto;
-  transition: all ease 0.8s;
-}
-.burgermenu{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-left: 6%;
-  margin-right: 6%;
-}
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --darkblue: #39404B;
+  --lightblue: #ebf4ff;
+  --seablue: #7cbbe5;
+  --darkseablue: #1d6077;
+  --jollyred: #ee272e;
 
-.logo2{
-  width: 100px;
-  align-self: center;
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-
-.login1{
-  font-size: 14px;
-  text-decoration: none;
-  align-self: center ;
-  color: black;
-  font-family: 'Epilogue', sans-serif;
+  --font: 'Epilogue', sans-serif;
 
 }
-.toggle{
-  font-size: 20px;
-  list-style: none;
-  text-decoration: none;
-  color: black;
-  align-self: center;
-}
-
-
 
 @media (max-width: 480px){
 
@@ -54,89 +29,22 @@ header{
 
   }
 @media (min-width: 736px){
-  .logo2{
-    width: 130px;
-  }
-  .toggle{
-    font-size: 30px;
-  }
-  .almmenu{
-    display: none;
-  }
 }
 
 @media (max-width: 1024px){
-  .almmenu{
-    display: none !important;
-  }
+
 
   }
 
 @media (min-width: 1025px){
-  .burgermenu{
-    display: none;
-  }
 
 
 }
 
-.almmenu{
-  display: flex;
-  justify-content: space-between;
-}
-
-.logo{
-  width: 130px;
-  height: auto;
-  cursor: pointer;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 30%;
-
-}
-.navlist{
-  font-family: 'Epilogue', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  align-self: center;
-
-}
-
-.navlist li{
-  display: inline-block;
-  padding:  0px 20px;
-}
-
-.navlist li a{
-  transition: 0.1s;
-  list-style: none;
-  color: black;
-  text-decoration: none;
-}
-
-.navlist li a:hover{
-  color: #bccbff;
-}
-.login{
-  margin-left: 70px;
-  font-size: 12px;
-}
 .billedebg{
 width: 100%;
 height: auto;
 }
 .parentpicture{
-    background-color: whitesmoke;
-}
-
-footer{
-  position: sticky;
-  z-index: -300;
-  bottom: 0;
-  left: 0;
-}
-.footer{
-  height: 400px;
-  background: white;
-
+  background-image: linear-gradient( white ,  #ebf4ff ,#ebf4ff);
 }

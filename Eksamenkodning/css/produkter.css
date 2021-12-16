@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:wght@500&display=swap');
+/*font-family: 'Epilogue', sans-serif;*/
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*root elementer for et bedre overblik i koden*/
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --darkblue: #39404B;
+  --lightblue: #ebf4ff;
+  --seablue: #7cbbe5;
+  --darkseablue: #1d6077;
+  --jollyred: #ee272e;
+
+  --font: 'Epilogue', sans-serif;
+
+}
+
+/*Media rules for Iphone*/
+@media (max-width: 480px){
+  .overskrift{
+    font-size: 70px;
+    padding-top: 100px;
+    font-style: italic;
+    animation: overskriftto 1s;
+}
+.dansk{
+    font-size: 30px;
+    font-weight: 500;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    animation: overskriftto 1s;
+}
+    
+    }
+  
+    @media (min-width: 481px){
+      .overskrift{
+        font-size: 70px;
+        padding-top: 100px;
+        font-style: italic;
+        animation: overskrift 1s;
+    }
+    .dansk{
+        font-size: 30px;
+        font-weight: 500;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        animation: overskrift 1s;
+    }
+      
+    }
+
+    /*Media rules for Ipad*/
+  @media (min-width: 736px){
+    
+    .tekstimg{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+    .around{
+      text-align: center;
+      margin-top: 100px;
+    }
+    .around2{
+      text-align: center;
+      margin-top: 100px;
+    }
+    .around3{
+      text-align: center;
+      margin-top: 100px;
+    }
+    .overskrift{
+      font-size: 70px;
+      padding-top: 100px;
+      font-style: italic;
+      animation: overskrift 1s;
+  }
+  .dansk{
+      font-size: 30px;
+      font-weight: 500;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      animation: overskrift 1s;
+  }
+  
+  }
+    /*Media rules for Ipad*/
+  @media (max-width: 1024px){
+    .mountain{
+      display: none;
+    
+    }
+    .around{
+      text-align: center;
+      margin-top: 100px;
+    }
+    .around2{
+      text-align: center;
+      margin-top: 100px;
+    }
+    .around3{
+      text-align: center;
+      margin-top: 100px;
+    }
+        /*Animation på teksten når siden loader (web)*/
+@keyframes overskrift{
+  from{
+      margin-right: 200px;
+      opacity: 0;
+      transform:rotateX(-10deg)
+  }
+  to{
+      opacity: 1;
+      transform: rotateX(0);
+  }
+}
+  /*Animation på teksten når siden loader (web)*/
+@keyframes overskriftto{
+  from{
+      margin-right: 50px;
+      opacity: 0;
+      transform:rotateX(-10deg)
+  }
+  to{
+      opacity: 1;
+      transform: rotateX(0);
+  }
+}
+   
+  
+    }
+  
+   /*Media rules for web*/
+  @media (min-width: 1025px){
+    .tekstimg{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      position: relative;
+      padding-bottom: 200px;
+    }
+    .mountain{
+      position: absolute;
+      bottom: 390px;
+      left: 0;
+      right: 0;
+      text-align: center;
+    }
+    .overskrift{
+      font-size: 70px;
+      padding-top: 100px;
+      font-style: italic;
+      animation: overskrift 1s;
+  }
+  .dansk{
+      font-size: 30px;
+      font-weight: 500;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      animation: overskrift 1s;
+  }
+
+    /*Animation på teksten når siden loader (web og ipad)*/
+@keyframes overskrift{
+  from{
+      margin-right: 200px;
+      opacity: 0;
+      transform:rotateX(-10deg)
+  }
+  to{
+      opacity: 1;
+      transform: rotateX(0);
+  }
+}
+  /*Animation på teksten når siden loader (web og ipad)*/
+@keyframes overskriftto{
+  from{
+      margin-right: 50px;
+      opacity: 0;
+      transform:rotateX(-10deg)
+  }
+  to{
+      opacity: 1;
+      transform: rotateX(0);
+  }
+}
+
+}
+.bgfarve{
+  background-image: linear-gradient( white ,  #ebf4ff ,#ebf4ff);
+}
+.tekst{
+    display: flex;
+    font-family: var(--font);
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.brodtekst{
+    font-style: 16px;
+    padding-bottom: 100px;
+    font-weight: 500;
+    font-style: italic;
+
+}
+
+.bg{
+    width: 100%;
+    height: auto;
+  }
+  
+  .knap{
+    text-decoration: none;
+    margin-top: 30px;
+    padding-bottom: 50px;
+  }
+  .findknap{
+    font-family:var(--font);
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    padding: 10px 10px;
+    border-radius: 25px;
+    background-color: #39404B;
+    
+  }
+  
+  .pil{
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    position: relative;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+  .pilned{
+    position: absolute;
+    width: 30px;
+    animation: pilned 2s linear infinite;
+    z-index: 100;
+    
+  }
+  
+/*Animation på pilen ned til læs mere knappen*/
+  @keyframes pilned{
+    0% {
+        top: 0%;
+      }
+      50% {
+        top: 30%;
+     }
+      100% {
+        top: 0;    
+      }
+    }
+  
+  .underover{
+    font-size: 40px;
+    font-family: var(--font);
+    font-weight: 600;
+  }
+  .underunder{
+    font-size: 40px;
+    font-family: var(--font);
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+  .ml{
+    font-size: 30px;
+    font-family: var(--font);
+    font-weight: 600;
+    margin-top: 10px;
+    color: rgb(177, 177, 177);
+  }
+  .around{
+    height: auto;
+    text-align: center;
+  }
+  
+  .around2{
+    height: auto;
+    text-align: center;
+    z-index: 100;
+  }
+  
+  .around3{
+    height: auto;
+    text-align: center;
+  }
+  .almcola{
+    width: 280px;
+  }
+  
+  .julecola{
+    width: 310px;
+  }
+  
+  .dietcola{
+    width: 350px;
+  }
+  
+  
+  .mg{
+    width: 50%;
+    
+  }
+footer{
+  height: 200px;
+  background: white;
+  font-family:var(--font);
+}
+
+.bgfarve{
+  background-image: linear-gradient( white ,  #ebf4ff ,#ebf4ff);
+}
+
+.faceikon{
+  width: 25px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.instaikon{
+  width: 50px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.overskriftfooter{
+  font-size: 25px;
+  font-weight: 500;
+  margin-top: 30px;
+  margin-bottom: 20px;
+
+}
+.forste a{
+  text-decoration: none;
+  color: black;
+}
+.anden a{
+  text-decoration: none;
+  color: black;
+}
+.trejde a{
+  text-decoration: none;
+  color: black;
+
+}
+
+h4{
+  font-weight: 300;
+}

@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:wght@500&display=swap');
+/*font-family: 'Epilogue', sans-serif;*/
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*root elementer for et bedre overblik i koden*/
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --darkblue: #39404B;
+  --lightblue: #ebf4ff;
+  --seablue: #7cbbe5;
+  --darkseablue: #1d6077;
+  --jollyred: #ee272e;
+
+  --font: 'Epilogue', sans-serif;
+
+}
+
+/*Her er headeren der indeholder alle elementerne*/
+header{
+  background-color: white;
+  height: auto;
+  transition: all ease 0.8s;
+}
+
+/*Her er brugermenuen*/
+.burgermenu{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 6%;
+  margin-right: 6%;
+}
+
+.logo2{
+  width: 100px;
+  align-self: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.login1{
+  font-size: 16px;
+  text-decoration: none;
+  align-self: center ;
+  color: black;
+  font-family: var(--font);
+
+}
+
+/*burgeren ikon*/
+.toggle{
+  font-size: 30px;
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  align-self: center;
+}
+
+
+/*Media rules for Iphone*/
+@media (max-width: 480px){
+  .bgfot{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  }
+/*Media rules for Iphone*/
+  @media (min-width: 481px){
+    .bgfot{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  /*Media rules for stående ipad*/
+@media (min-width: 736px){
+  .logo2{
+    width: 130px;
+  }
+  .toggle{
+    font-size: 30px;
+  }
+  .almmenu{
+    display: none;
+  }
+  .bgfot{
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+}
+/*Media rules for stående ipad*/
+@media (max-width: 1024px){
+  .almmenu{
+    display: none !important;
+  }
+  .bgfot{
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+ 
+
+  }
+
+  /*Media rules for web*/
+@media (min-width: 1025px){
+  .burgermenu{
+    display: none;
+  }
+  .bgfot{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 11%;
+    margin-right: 11%;
+    padding-top: 20px;
+  }
+
+
+
+}
+
+/*Div for den alm. menu*/
+.almmenu{
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo{
+  width: 130px;
+  height: auto;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 30%;
+
+}
+.navlist{
+  font-family: var(--font);
+  font-weight: 400;
+  font-size: 16px;
+  align-self: center;
+
+}
+
+.navlist li{
+  display: inline-block;
+  padding:  0px 20px;
+}
+
+.navlist li a{
+  transition: 0.1s;
+  list-style: none;
+  color: var(--black);
+  text-decoration: none;
+  transition-duration: 0.2s ;
+  transition-property: color ;
+}
+
+.navlist li a:hover{
+  color: var(--jollyred);
+}
+.login{
+  margin-left: 70px;
+  font-size: 12px;
+}
+
+
+/*Fotteren*/
+footer{
+  height: 200px;
+  font-family: var(--font);
+}
+.footer{
+  padding-bottom: 20px;
+  background-color: var(--darkblue);
+}
+
+.faceikon{
+  width: 25px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.instaikon{
+  width: 50px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.overskriftfooter{
+  font-size: 25px;
+  font-weight: 500;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  color: var(--lightblue);
+
+}
+.forste a{
+  text-decoration: none;
+  color: var(--lightblue);
+  transition-duration: 0.2s ;
+  transition-property: color ;
+}
+.anden a{
+  text-decoration: none;
+  color: var(--lightblue);
+  transition-duration: 0.2s ;
+  transition-property: color ;
+}
+.trejde a{
+  text-decoration: none;
+  color: var(--lightblue);
+  transition-duration: 0.2s ;
+  transition-property: color ;
+
+}
+
+.forste a:hover{
+  color: var(--jollyred);
+}
+.anden a:hover{
+  color:var(--jollyred);
+}
+.tredje a:hover{
+  color:var(--jollyred);
+}
+
+h4{
+  font-weight: 300;
+  margin-top: 20px;
+}

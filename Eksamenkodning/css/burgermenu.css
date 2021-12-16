@@ -7,15 +7,18 @@
   }
 .baggrund{
     height: 100vh;
-    background-color: rgb(238, 238, 238);
+    background-image: linear-gradient(#ebf4ff ,#ebf4ff, white);
     animation: baggrund 0.7s;
 }
 .x{
+    border: none;
     text-decoration: none;
     list-style: none;
     font-size: 25px;
     color: black;
     font-family: 'Rubik', sans-serif;
+    margin-top: 30px;
+    margin-left: 10px;
 }
 .menupunkter{
     display: flex;
@@ -41,7 +44,7 @@ header{
 }
 li {
     text-align: center;
-    padding-top: 80px;
+    padding-top: 60px;
 }
 
 .some{
@@ -52,12 +55,12 @@ li {
 }
 
 .instagram{
-    width: 80px;
-    margin-right: 10px;
+    width: 60px;
+    margin-left: 20px;
 }
 .facebook{
-    width: 80px;
-    margin-left: 10px;
+    width: 30px;
+    margin-right: 20px;
 }
 
 @keyframes transitionIn{

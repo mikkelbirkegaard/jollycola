@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:wght@500&display=swap');
+/*font-family: 'Epilogue', sans-serif;*/
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*root elementer for et bedre overblik i koden*/
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --darkblue: #39404B;
+  --lightblue: #ebf4ff;
+  --seablue: #7cbbe5;
+  --darkseablue: #1d6077;
+  --jollyred: #ee272e;
+
+  --font: 'Epilogue', sans-serif;
+
+}
+
+
+/*Media rules for iphone*/
+@media (max-width: 480px){
+  .overskrift{
+    font-family: var(--font);
+    font-size: 60px;  
+    font-weight: 900;
+    color: white;
+    padding-top: 100px;
+  }
+  .overskrift2{
+    font-family:var(--font);
+    font-size: 20px;  
+    font-weight: 600;
+    color: white;
+    padding-top: 40px;
+  }
+  .underover{
+    font-family:var(--font);
+    font-size: 30px;  
+    font-weight: 600;
+    color: white;
+    padding-top: 40px;
+  }
+  .t1{
+    width: 20ch;
+    font-family:var(--font);
+    font-size: 20px;  
+    font-weight: 400;
+    color: white;
+    padding-top: 60px;
+  }
+  .t2{
+    width: 20ch;
+    font-family:var(--font);
+    font-size: 20px;  
+    font-weight: 400;
+    color: white;
+    padding-top: 60px;
+  }
+  .t3{
+    width: 20ch;
+    font-family:var(--font); 
+    font-size: 20px;  
+    font-weight: 400;
+    color: white;
+    padding-top: 60px;
+  }
+  .oceanlogo{
+    padding: 15px 15px;
+  }
+  .instabilleder{
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+
+
+  }
+
+  /*Media rules for iphone*/
+  @media (min-width: 481px){
+    .overskrift{
+      font-family:var(--font); 
+      font-size: 60px;  
+      font-weight: 900;
+      color: white;
+      padding-top: 100px;
+    }
+    .overskrift2{
+      font-family:var(--font); 
+      font-size: 30px;  
+      font-weight: 600;
+      color: white;
+      padding-top: 40px;
+    }
+    .underover{
+      font-family:var(--font); 
+      font-size: 30px;  
+      font-weight: 600;
+      color: white;
+      padding-top: 40px;
+    }
+    .t1{
+      width: 20ch;
+      font-family:var(--font);
+      font-size: 20px;  
+      font-weight: 400;
+      color: white;
+      padding-top: 60px;
+    }
+    .t2{
+      width: 20ch;
+      font-family:var(--font); 
+      font-size: 20px;  
+      font-weight: 400;
+      color: white;
+      padding-top: 60px;
+    }
+    .t3{
+      width: 20ch;
+      font-family:var(--font);
+      font-size: 20px;  
+      font-weight: 400;
+      color: white;
+      padding-top: 60px;
+    }
+    .oceanlogo{
+      padding: 15px 15px;
+    }
+    .instabilleder{
+      width: 100%;
+      margin-top: 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+    }
+
+  }
+
+  /*Media rules for ipad*/
+@media (min-width: 736px){
+  .overskrift{
+    font-family:var(--font); 
+    font-size: 100px;  
+    font-weight: 900;
+    color: white;
+    padding-top: 100px;
+  }
+  .overskrift2{
+    font-family:var(--font); 
+    font-size: 50px;  
+    font-weight: 600;
+    color: white;
+    padding-top: 40px;
+    
+  }
+  .underover{
+    font-family:var(--font); 
+    font-size: 40px;  
+    font-weight: 600;
+    color: white;
+    padding-top: 40px;
+  }
+  .t1{
+    width: 20ch;
+    font-family:var(--font);
+    font-size: 20px;  
+    font-weight: 400;
+    color: white;
+    padding-top: 60px;
+  }
+  .t2{
+    width: 20ch;
+    font-family:var(--font);
+    font-size: 20px;  
+    font-weight: 400;
+    color: white;
+    padding-top: 60px;
+  }
+  .t3{
+    width: 20ch;
+    font-family:var(--font);
+    font-size: 20px;  
+    font-weight: 400;
+    color: white;
+    padding-top: 60px;
+  }
+  .instabilleder{
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+
+}
+
+  /*Media rules for web*/
+@media (min-width: 1025px){
+  .overskrift{
+    font-family:var(--font);
+    font-size: 100px;  
+    font-weight: 900;
+    color: white;
+    padding-top: 100px;
+  }
+  .overskrift2{
+    font-family:var(--font); 
+    font-size: 50px;  
+    font-weight: 600;
+    color: white;
+    padding-top: 40px;
+    
+  }
+  .underover{
+    font-family:var(--font); 
+    font-size: 50px;  
+    font-weight: 600;
+    color: white;
+    padding-top: 40px;
+  }
+  .t1{
+    width: 20ch;
+    font-family:var(--font);
+    font-size: 29px;  
+    font-weight: 400;
+    color: white;
+    padding-top: 60px;
+  }
+  .t2{
+    width: 20ch;
+    font-family:var(--font);
+    font-size: 29px;  
+    font-weight: 400;
+    color: white;
+    padding-top: 60px;
+  }
+  .t3{
+    width: 20ch;
+    font-family:var(--font); 
+    font-size: 29px;  
+    font-weight: 400;
+    color: white;
+    padding-top: 60px;
+  }
+  .instabilleder{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+  }
+
+}
+
+
+
+.logoer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #c0e0f9;
+
+}
+.jollylogostor{
+    width: 300px;
+    height: auto;
+    padding-top: 50px;
+}
+.oceanlogo{
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    padding-top: 70px;
+    padding-bottom: 40px;
+}
+.ship{
+    width: 100%;
+}
+.indhold{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    background-image: linear-gradient(#7cbbe5, #1d6077);
+    position: relative;
+    z-index: -2;
+}
+
+
+.dykning{
+    display: flex;
+}
+.dykker{
+    width: 100%;
+    max-width: 500px;
+}
+
+.tekst{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.etinsta{
+  width: 100%;
+  max-width: 300px;
+  height: 300px;
+  margin-top: 20px;
+}
+
+.insta1{
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  background-color: white;
+  margin-left: 20px;
+  margin-right: 20px;
+  box-shadow: 10px 10px 10px var(--darkseablue);
+  align-self: center;
+  margin-bottom: 40px;
+
+}
+
+.insta2{
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  background-color: white;
+  margin-left: 20px;
+  margin-right: 20px;
+  box-shadow: 10px 10px 10px var(--darkseablue);
+  align-self: center;
+  margin-bottom: 40px;
+
+}
+
+.insta3{
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  background-color: white;
+  margin-left: 20px;
+  margin-right: 20px;
+  box-shadow: 10px 10px 10px var(--darkseablue);
+  align-self: center;
+  margin-bottom: 40px;
+
+}
+.icons{
+  width: 50px;
+  padding-top: 15px;
+  padding-left: 5px;
+}
+
+.hashtag{
+  font-family:var(--font); 
+  font-size: 15px;  
+  font-weight: 400;
+  padding-top: 20px;
+  padding-left: 5px;
+}
+
+  .pil{
+      width: 100px;
+      padding-top: 100px;
+
+  }
+
+  .skrald{
+      width: 100%;
+      max-width: 700px;
+  }
+
+  .over{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      flex-direction: column;
+  }
+  .punkter{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+  }
+  .skraldan{
+    background: url(../images/skraldanimation.png);
+    height: 200vh;
+    width: 100%;
+    overflow: hidden;
+    background-repeat: repeat;
+    animation: skralde 2s linear infinite;
+    position: absolute;
+    opacity: 0.2;
+    z-index: -1;
+    filter: brightness(50%);
+}
+
+/*Animation på skraldet i baggrunden*/
+@keyframes skralde{
+    0% {
+        left: 0%;
+      }
+      50% {
+        left: 1%;
+     }
+      100% {
+        left: 0;    
+      }
+    }
+
+

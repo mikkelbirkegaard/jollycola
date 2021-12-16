@@ -7,45 +7,27 @@
   padding: 0;
 }
 
+:root {
+    --black: #000000;
+    --white: #ffffff;
+    --darkblue: #39404B;
+    --lightblue: #ebf4ff;
+    --seablue: #7cbbe5;
+    --darkseablue: #1d6077;
+    --jollyred: #ee272e;
+    --kodegrey: #808080;
+  
+    --font: 'Epilogue', sans-serif;
+  
+  }
 
-header{
-  background-color: white;
-  height: auto;
-  transition: all ease 0.8s;
+
+/*Baggrundfarve i main*/
+.bg{
+    width: 100%;
+    height: auto;
 }
-.burgermenu{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-left: 6%;
-  margin-right: 6%;
-}
-
-.logo2{
-  width: 100px;
-  align-self: center;
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-
-.login1{
-  font-size: 14px;
-  text-decoration: none;
-  align-self: center ;
-  color: black;
-  font-family: 'Epilogue', sans-serif;
-
-}
-.toggle{
-  font-size: 20px;
-  list-style: none;
-  text-decoration: none;
-  color: black;
-  align-self: center;
-}
-
-
-
+/*Media rules for Iphone*/
 @media (max-width: 480px){
     .tekst{
         font-size: 10px;
@@ -54,322 +36,473 @@ header{
         display: none;
     }
 
+      .konkurrencebetingelser{
+        flex-direction: column;
+    }
     .tekst{
-        top: 10%;
-        left: 10%;
         font-family:'Epilogue', sans-serif; 
         font-size: 40px;
         font-style: italic;
         font-weight: 900;
-        text-align: center;
         animation: tekst 1s;
       }
-    
       .koden{
-        width: 60%;
-        top:30%;
-        left: 20%;
-        font-family:'Epilogue', sans-serif; 
-        font-size: 30px;
+        font-family: var(--font); 
+        font-size: 20px;
         font-weight: 700;
         font-style: italic;
         border: none;
         border-radius: 20px;
         padding: 10px 10px;
-        background-color: grey;
+        background-color: var(--kodegrey);
         color: whitesmoke;
+        z-index: 100;
         animation: tekst 1s;
       }
-      .kunderoverskrift{
-        top:20%;
-        left: 8%;
-        font-family:'Epilogue', sans-serif; 
-        font-size: 25px;
-        font-style: italic;
-        animation: tekst 1s;
-      }
-  }
 
+      .kunderoverskrift{
+        font-family: var(--font); 
+        font-size: 20px;
+        font-style: italic;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        animation: tekst 1s;
+      }
+      .alttekst{
+        position: absolute;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+    }
+    .tt{
+        text-align: center;
+        padding-top: 20%;
+    
+    }
+    .overskrift{
+        font-size: 40px;
+        font-weight: 600;
+        text-align:left;
+    }
+    
+    .underoverskrift{
+        font-size: 16px;
+        font-weight: 600;
+        padding-top: 20px;
+    }
+    .tekstomkonkurrence{
+        font-size: 14px;
+        font-weight: 300;
+        padding-top: 50px;
+        padding-left: 2%;
+        padding-right: 2%;
+        line-height: 1.5;
+    }
+
+
+  }
+/*Media rules for Iphone*/
   @media (min-width: 481px){
       .bg{
           display: none;
       }
-      .tekst{
-        top: 5%;
-        left: 20%;
+      .konkurrencebetingelser{
+        flex-direction: column;
+    }
+    .tekst{
         font-family:'Epilogue', sans-serif; 
-        font-size: 60px;
+        font-size: 40px;
         font-style: italic;
         font-weight: 900;
         animation: tekst 1s;
       }
-    
       .koden{
-        top:20%;
-        left: 20%;
-        font-family:'Epilogue', sans-serif; 
-        font-size: 30px;
+        font-family: var(--font);  
+        font-size: 20px;
         font-weight: 700;
         font-style: italic;
-        margin-top: 30px;
         border: none;
         border-radius: 20px;
         padding: 10px 10px;
-        background-color: grey;
+        background-color: var(--kodegrey);
         color: whitesmoke;
+        z-index: 100;
         animation: tekst 1s;
       }
       .kunderoverskrift{
-        top:10%;
-        left: 23%;
-        font-family:'Epilogue', sans-serif; 
-        font-size: 30px;
+        font-family: var(--font);  
+        font-size: 20px;
         font-style: italic;
         margin-top: 30px;
+        margin-bottom: 30px;
         animation: tekst 1s;
       }
+      .alttekst{
+        position: absolute;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+    }
+    .tt{
+        text-align: center;
+        padding-top: 20%;
+    
+    }
+    .overskrift{
+        font-size: 40px;
+        font-weight: 600;
+        text-align: left;
+    }
+    
+    .underoverskrift{
+        font-size: 20px;
+        font-weight: 500;
+        padding-top: 20px;
+    }
+    .tekstomkonkurrence{
+        font-size: 14px;
+        font-weight: 300;
+        padding-top: 50px;
+        padding-left: 2%;
+        padding-right: 2%;
+        line-height: 1.5;
+    }
 
   }
+
+  /*Media rules for Ipad*/
 @media (min-width: 736px){
-  .logo2{
-    width: 130px;
-  }
-  .toggle{
-    font-size: 30px;
-  }
-  .almmenu{
-    display: none;
-  }
   .bg{
       display: none;
   }
-  .tekst{
-    top: 10%;
-    left: 15%;
-    font-family:'Epilogue', sans-serif; 
-    font-size: 80px;
+  .konkurrencebetingelser{
+    flex-direction: column;
+}
+.tekst{
+    font-family: var(--font);  
+    font-size: 60px;
     font-style: italic;
     font-weight: 900;
     animation: tekst 1s;
   }
+  .overskrift{
+    font-size: 40px;
+    font-weight: 600;
+    padding-bottom: 20px;
+    text-align: left;
+  }
 
-  .koden{
-    top:30%;
-    left: 25% ;
-    font-family:'Epilogue', sans-serif; 
-    font-size: 30px;
-    font-weight: 700;
-    font-style: italic;
-    margin-top: 30px;
-    border: none;
-    border-radius: 20px;
-    padding: 10px 10px;
-    background-color: grey;
-    color: whitesmoke;
-    animation: tekst 1s;
-  }
-  .kunderoverskrift{
-    top:15%;
-    left: 25%;
-    font-family:'Epilogue', sans-serif; 
-    font-size: 30px;
-    font-style: italic;
-    margin-top: 30px;
-    animation: tekst 1s;
-  }
+.underoverskrift{
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 20px;
 }
-@media (min-width: 769px){
-    .almmenu{
-      display: none;
+/*animation af tekst*/
+@keyframes tekst{
+    from{
+        margin-right: 200px;
+        opacity: 0;
+        transform:rotateX(-10deg)
     }
-    .bgmobil{
-        display: none;
+    to{
+        opacity: 1;
+        transform: rotateX(0);
     }
-  }
+}
+.tekstomkonkurrence{
+    font-size: 16px;
+    font-weight: 300;
+    padding-top: 20px;
+    text-align: center;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+}
 
-  @media (min-width: 770px){
-    .almmenu{
-      display: none;
+  /*Media rules for Ipad*/
+@media (min-width: 768px){
+    .konkurrencebetingelser{
+        flex-direction: column;
     }
+
+    /*animation af tekst*/
+@keyframes tekst{
+    from{
+        margin-right: 200px;
+        opacity: 0;
+        transform:rotateX(-10deg)
+    }
+    to{
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+.tekstomkonkurrence{
+    font-size: 16px;
+    font-weight: 300;
+    padding-top: 20px;
+    text-align: center;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+  }
+  /*Media rules for Ipad*/
+  @media (min-width: 770px){
     .bgmobil{
         display: none;
     }
     .bg{
         display: block;
     }
-
-  }
-
-
-@media (max-width: 1024px){
-  .almmenu{
-    display: none !important;
-  }
-
-
-  }
-  @media (min-width: 1024px){
     .tekst{
-        top: 30%;
-        left: 7%;
-        font-family:'Epilogue', sans-serif; 
+        font-family: var(--font);  
         font-size: 60px;
         font-style: italic;
         font-weight: 900;
         animation: tekst 1s;
       }
-    
       .koden{
-        top:60%;
-        left: 8%;
-        font-family:'Epilogue', sans-serif; 
-        font-size: 30px;
+        font-family: var(--font);  
+        font-size: 20px;
         font-weight: 700;
         font-style: italic;
-        margin-top: 30px;
         border: none;
         border-radius: 20px;
         padding: 10px 10px;
-        background-color: grey;
+        background-color: var(--kodegrey);
         color: whitesmoke;
+        z-index: 100;
         animation: tekst 1s;
       }
       .kunderoverskrift{
-        top:40%;
-        left: 10%;
-        font-family:'Epilogue', sans-serif; 
+        font-family: var(--font); 
         font-size: 30px;
         font-style: italic;
         margin-top: 30px;
+        margin-bottom: 30px;
         animation: tekst 1s;
       }
+      .alttekst{
+        position: absolute;
+        top: 0;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 100vh;
+    }
+    .tt{
+        text-align: center;
+        width: 50%;
+        padding-top: 25%;
+    
+    }
+    /*animation af tekst*/
+@keyframes tekst{
+    from{
+        margin-right: 200px;
+        opacity: 0;
+        transform:rotateX(-10deg)
+    }
+    to{
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+.tekstomkonkurrence{
+    font-size: 16px;
+    font-weight: 300;
+    padding-top: 20px;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.overskrift{
+    text-align: left;
+}
+
+
+  
+
+  }
+  /*Media rules for ipad*/
+  @media (min-width: 1024px){
+      .konkurrencebetingelser{
+          flex-direction: column;
+      }
+      .konkurrencebetingelser{
+        flex-direction: row;
+    }
+    .tekst{
+        font-family: var(--font);  
+        font-size: 60px;
+        font-style: italic;
+        font-weight: 900;
+        animation: tekst 1s;
+      }
+      .koden{
+        font-family: var(--font);  
+        font-size: 20px;
+        font-weight: 700;
+        font-style: italic;
+        border: none;
+        border-radius: 20px;
+        padding: 10px 10px;
+        background-color: var(--kodegrey);
+        color: whitesmoke;
+        z-index: 100;
+        animation: tekst 1s;
+      }
+      .kunderoverskrift{
+        font-family: var(--font);  
+        font-size: 30px;
+        font-style: italic;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        animation: tekst 1s;
+      }
+      .alttekst{
+        position: absolute;
+        top: 0;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 100vh;
+    }
+    .tt{
+        text-align: center;
+        width: 50%;
+        padding-top: 25%;
+    
+    }
+    .overskrift{
+        font-size: 70px;
+        font-weight: 600;
+    }
+    .underoverskrift{
+        font-size: 30px;
+        font-weight: 500;
+    }
+    /*animation af tekst*/
+@keyframes tekst{
+    from{
+        margin-right: 200px;
+        opacity: 0;
+        transform:rotateX(-10deg)
+    }
+    to{
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
   
   
     }
-
+  /*Media rules for web*/
 @media (min-width: 1025px){
-  .burgermenu{
-    display: none;
-  }
-
   .bg{
     display: block;
 }
 .bgmobil{
     display:none;
 }
-  .tekst{
-    top: 31%;
-    left: 100px;
-    font-family:'Epilogue', sans-serif; 
+.tekst{
+    font-family: var(--font);  
     font-size: 80px;
     font-style: italic;
     font-weight: 900;
     animation: tekst 1s;
   }
-
   .koden{
-    top:50%;
-    left: 160px;
-    font-family:'Epilogue', sans-serif; 
+    font-family: var(--font);  
     font-size: 30px;
     font-weight: 700;
     font-style: italic;
-    margin-top: 30px;
     border: none;
     border-radius: 20px;
     padding: 10px 10px;
-    background-color: grey;
+    background-color: var(--kodegrey);
     color: whitesmoke;
     z-index: 100;
     animation: tekst 1s;
   }
   .kunderoverskrift{
-    top:40%;
-    left: 170px;
-    font-family:'Epilogue', sans-serif; 
+    font-family: var(--font);  
     font-size: 30px;
     font-style: italic;
     margin-top: 30px;
     animation: tekst 1s;
+    margin-bottom: 30px;
   }
+  .alttekst{
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+}
+.tt{
+    text-align: center;
+    width: 50%;
+    padding-top: 25%;
 
+} 
+.overskrift{
+    font-size: 70px;
+    font-weight: 600;
+}
+.underoverskrift{
+    font-size: 30px;
+    font-weight: 500;
+}
+/*animation af tekst*/
+@keyframes tekst{
+    from{
+        margin-right: 200px;
+        opacity: 0;
+        transform:rotateX(-10deg)
+    }
+    to{
+        opacity: 1;
+        transform: rotateX(0);
+    }
 }
 
-.almmenu{
-  display: flex;
-  justify-content: space-between;
+.tekstomkonkurrence{
+    font-size: 16px;
+    font-weight: 300;
+    padding-top: 20px;
+    text-align: center;
+    padding-left: 25%;
+    padding-right: 25%;
+}
 }
 
-.logo{
-  width: 130px;
-  height: auto;
-  cursor: pointer;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 30%;
 
-}
-.navlist{
-  font-family: 'Epilogue', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  align-self: center;
 
-}
-
-.navlist li{
-  display: inline-block;
-  padding:  0px 20px;
-}
-
-.navlist li a{
-  transition: 0.1s;
-  list-style: none;
-  color: black;
-  text-decoration: none;
-}
-
-.navlist li a:hover{
-  color: #bccbff;
-}
-.login{
-  margin-left: 70px;
-  font-size: 12px;
+.pp{
+    width: 50%;
 }
 
 .prove2{
     position: relative;
 }
-.tekst{
-    position:absolute;
-}
-.kunderoverskrift{
-    position:absolute;
-}
-.koden{
-    position:absolute;
-}
+
+/*teksten inde i knappen*/
 ::placeholder{
     color: whitesmoke;
     text-align: center;
 }
-
-
-footer{
-  z-index: -300;
-  bottom: 0;
-  left: 0;
-}
-.footer{
-  height: 400px;
-  background: white;
-
+input:focus{
+    outline: none;
 }
 
-.tekstom2{
-    background-color: white;
-}
+/*Baggrundfarve i main*/
 .bg{
     width: 100%;
     height: auto;
@@ -389,6 +522,88 @@ footer{
     position: absolute;
     opacity: 0.6;
 }
+
+.tekstom2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font); 
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+}
+
+.konkurrencebetingelser{
+    display: flex;
+    justify-content: center;
+    font-family: var(--font); 
+    margin-top: 100px;
+    padding-bottom: 200px;
+}
+
+
+.bund{
+    width: 250px;
+    padding-top: 120px;
+}
+
+.cola{
+    width: 150px;
+    padding-top: 70px;
+}
+
+.kob{
+    font-size: 16px;
+    font-weight: 600;
+}
+.underbunden{
+    font-size: 16px;
+    font-weight: 600;
+}
+.rejse{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+.forste {
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.anden {
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.tal{
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--darkblue);
+    align-items: center;
+    padding-top: 12px;
+    border-radius: 100%;
+    color: white;
+}
+.tall{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
+.colorbg{
+    background-image: linear-gradient( white ,  #ebf4ff ,#ebf4ff);
+}
+
+
+/*animation af sne på forsiden*/
 @keyframes sne{
     0%{
         background-position: 50px 50px  
@@ -407,17 +622,5 @@ footer{
     }
     100%{
         background-position: 300px 300px  
-    }
-}
-
-@keyframes tekst{
-    from{
-        left: 0;
-        opacity: 0;
-        transform:rotateX(-10deg)
-    }
-    to{
-        opacity: 1;
-        transform: rotateX(0);
     }
 }

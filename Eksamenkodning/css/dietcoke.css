@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:wght@500&display=swap');
+/*font-family: 'Epilogue', sans-serif;*/
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*root elementer for et bedre overblik i koden*/
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --darkblue: #39404B;
+  --lightblue: #ebf4ff;
+  --seablue: #7cbbe5;
+  --darkseablue: #1d6077;
+  --jollyred: #ee272e;
+
+  --font: 'Epilogue', sans-serif;
+
+}
+
+.html{
+  position: relative;
+}
+
+
+/*Media rules for Iphone*/
+@media (max-width: 480px){
+  .billeder{
+    display: none;
+  }
+  .cola{
+    display: none;
+  }
+  .monster{
+    display: none;
+  }
+  .overdemalle{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    justify-content: center;
+}
+.brodtekst{
+  font-size: 16px;
+  padding-top: 50px;
+  padding-left: 25%;
+  padding-right: 25%;
+}
+
+
+  }
+/*Media rules for Iphone*/
+  @media (min-width: 481px){
+    .billeder{
+      display: none;
+    }
+    .cola{
+      display: none;
+    }
+    .monster{
+      display: none;
+    }
+    .overdemalle{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+  }
+  .brodtekst{
+    font-size: 16px;
+    padding-top: 50px;
+    padding-left: 25%;
+    padding-right: 25%;
+  }
+
+  }
+
+  /*Media rules for stående ipad*/
+@media (min-width: 736px){
+  .billeder{
+    display: none;
+  }
+  .cola{
+    display: none;
+  }
+  .monster{
+    display: none;
+  }
+  .overdemalle{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.brodtekst{
+  font-size: 16px;
+  padding-top: 50px;
+  padding-left: 25%;
+  padding-right: 25%;
+}
+/*Animation på colaen*/
+@keyframes cola{
+  from{
+      margin-left: 200px;
+      opacity: 0;
+      transform:rotateX(-10deg)
+  }
+  to{
+      opacity: 1;
+      transform: rotateX(0);
+  }
+}
+
+/*Animation på teksten "Jolly Cola"*/
+@keyframes tekst {
+  from{
+      margin-right: 200px;
+      opacity: 0;
+      transform:rotateX(-10deg)
+  }
+  to{
+      opacity: 1;
+      transform: rotateX(0);
+  }
+}
+
+/*Animation på  teksten "original"*/
+@keyframes tekstto {
+  from{
+      margin-right: 200px;
+      opacity: 0;
+      transform:rotateX(-10deg)
+  }
+  to{
+      opacity: 1;
+      transform: rotateX(0);
+  }
+}
+
+
+}
+/*Media rules for web*/
+@media (min-width: 1025px){
+  .colamobil{
+    display: none;
+  }
+  .billeder{
+    display: block;
+  }
+  .cola{
+    display: block;
+  }
+  .monster{
+    display: block;
+  }
+  .overdemalle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 300px;
+}
+.monstermobil{
+  display: none;
+}
+.brodtekst{
+  font-size: 16px;
+  padding-top: 50px;
+  width: 70ch;
+}
+footer{
+  height: 200px;
+}
+/*Animation på colaen*/
+@keyframes cola{
+  from{
+      margin-left: 200px;
+      opacity: 0;
+      transform:rotateX(-10deg)
+  }
+  to{
+      opacity: 1;
+      transform: rotateX(0);
+  }
+}
+
+/*Animation på teksten "Jolly Cola"*/
+@keyframes tekst {
+  from{
+      margin-right: 200px;
+      opacity: 0;
+      transform:rotateX(-10deg)
+  }
+  to{
+      opacity: 1;
+      transform: rotateX(0);
+  }
+}
+
+/*Animation på  teksten "original"*/
+@keyframes tekstto {
+  from{
+      margin-right: 200px;
+      opacity: 0;
+      transform:rotateX(-10deg)
+  }
+  to{
+      opacity: 1;
+      transform: rotateX(0);
+  }
+}
+
+}
+
+
+
+/*Div som er over alle elementer*/
+.overdemalle{
+  padding-top: 100px;
+}
+
+.tekst{
+    font-family: 'Epilogue', sans-serif;
+    text-align: center;
+}
+
+.smocola{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.billeder{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.monster{
+    position: absolute;
+    width: 600px;
+    z-index: -1;
+    opacity: 0.2;
+    right: 5%;
+    animation: mmon 1s;
+}
+
+.jollycola{
+    font-size: 50px;
+    font-weight: 600;
+    animation: tekst 2s;
+}
+
+.jollyoriginal{
+    font-size: 50px;
+    font-weight: 400;
+    animation: tekstto 4s;
+}
+
+main{
+  position: relative;
+}
+
+
+.bg{
+  width: 100%;
+  height: auto;
+}
+
+.knap{
+  text-decoration: none;
+  margin-top: 30px;
+  justify-self: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.findknap{
+  font-family:'Epilogue', sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  color: white;
+  padding: 10px 10px;
+  border-radius: 25px;
+  background-color: #39404B;
+  
+}
+
+.ml{
+  font-size: 12px;
+  font-family: 'Epilogue', sans-serif;
+  font-weight: 600;
+  margin-top: 10px;
+  color: rgb(177, 177, 177);
+}
+
+.dose{
+    width: 25px;
+    margin: 15px 15px;
+}
+.stor{
+    width: 25px;
+    margin: 15px 15px;
+}
+.lille{
+    width: 15px;
+    margin: 15px 15px;
+}
+
+
+.bgfarve{
+  background-image: linear-gradient( white ,  #ebf4ff ,#ebf4ff);
+  z-index: -100;
+}
+
+
+.colamobil{
+  width: 100%;
+  max-width: 250px;
+  animation: cola 2s;
+}
+.cola{
+  width: 100%;
+  animation: cola 1s;
+}
+
+
+.pict{
+  position: relative;
+}
+
+.monstermobil{
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  width: 100%;
+  opacity: 0.2;
+  bottom: 1px;
+}
+
+

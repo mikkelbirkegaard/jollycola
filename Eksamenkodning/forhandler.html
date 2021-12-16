@@ -4,21 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Konkurrencer</title>
-  <link rel="stylesheet" href="css/konkurrencer.css">
+  <title>navbar</title>
+  <link rel="stylesheet" href="css/forhandler.css">
   <link rel="stylesheet" href="css/footerognav.css">
-
 </head>
-<body>
+<body class="ppp">
   
     <header>
+        <!--Det her er menuen til mobil version-->
+        <nav>
             <div class="burgermenu">
             <a class="toggle" href="burgermenu.html">☰</a>
             <a href="index.html"><img class="logo2" src="images/jollylogo.png" alt="logo"></a>
-            <a class="login1" href="#">Log In</a>
-        </div>
+            <a class="login1" href="404.html">Log In</a>
+            </div>
+         </nav>
+
+
+        <!--Det her er menuen til desktop -->
         <nav>
-        <div class="almmenu">
+          <div class="almmenu">
             <a href="index.html">
             <img class="logo" src="images/jollylogo.png" alt="logo">
            </a>
@@ -31,56 +36,44 @@
                <li><a href="404.html">Om os</a></li>
                <li class="login"><a href="404.html">log in</a></li>
              </ul>
-    </div>
-</nav>
+        </div>
+        </nav>
     </header>
+    <main class="bgfarve">
+        <section class="overdemalle">
+            <section class="tekst">
+                <h1 class="forhandler">Find din nærmeste forhandler</h1>
 
-    <div class="prove2">
-    <div class="sne"></div>
-    <figure class="konkurrencebillede">
-        <img class="bg" src="images/web.png" alt="konkurrence">
-    </figure>
+                <h3 class="postnummer">Indsæt postnummer</h3>
+                <input class="nummer" type="text" placeholder="8000, Aarhus C">
 
-    <figure class="mobilkonkurrence">
-        <img class="bgmobil" src="images/mobil.png" alt="konkurrence">
-    </figure>
-    <div class="alttekst">
-        <div class="tt">
-    <h1 class="tekst">VIND EN REJSE</h1>
-    <h3 class="kunderoverskrift">INDSÆT DIN KODE</h3>
-    <input class="koden" type="text" placeholder="FQ8947G">
-    </div>
-    <div class="pp"></div>
-</div>
-</div>
-
-<div class="colorbg">
-<div class="tekstom2">
-    <h1 class="overskrift"> <span id="sadan">Sådan</span> <span id="deltager"> deltager</span> <span id="du">du</span> </h1>
-    <h3 class="underoverskrift">Vær med i konkurrencen om at vinde en rejse for 2 personer</h3>
-    <p class="tekstomkonkurrence"> Vi udlodder lige nu en konkurrence hvor du har mulighed for at vinde en rejse for 2 personer til en valgfri destination. Konkurrencen har en værdi af 40.000 kr. og du kan sammen med en god ven/veninde eller kæreste nyde solen sydpå, eller få adrenalinen op på en skiferie.</p>
-</div>
-
-    <section class="konkurrencebetingelser">
-    <div class="forste">
-        <div class="tall">
-    <p class="tal">1</p>
-        </div>
-    <h4 class="kob">Køb en Jolly Cola Juleedition</h4>
-    <img class="cola" src="images/Cola.png" alt="">
-    </div>
-
-    <div class="anden">
-        <div class="tall">
-            <p class="tal">2</p>
+                <div class="pict">
+                <img class="danmarkmobil" src="images/danmark.png" alt="julecola">
                 </div>
-        <h4 class="underbunden">Indsæt koden under bunden</h4>
-        <img class="bund" src="images/bund.png" alt="">
-        </div>
-   </section>
-</div>
 
-  
+
+                
+                <figure class="smocola">
+                    <div class="forst">
+                        <img class="almcola" src="images/almcola.png" alt="sort cola størelse">
+                    </div>
+                    <div class="ande">
+                        <img class="dietcola" src="images/dietcola.png" alt="sort cola størelse">
+                    </div>
+                    <div class="tredj">
+                        <img class="julecola" src="images/julecola.png" alt="sort cola størelse">
+                    </div>            
+                </figure>
+            </section>
+
+            <section class="billeder">
+                <img class="danmark" src="images/danmark.png" alt="julecola">
+            </section>
+        </section>
+
+
+    </main>
+
 
     </body>
     <footer>
@@ -95,8 +88,8 @@
                 </div>
                  <div class="anden">
                     <h3 class="overskriftfooter">Find forhandler</h3>
-                    <a href="forhandler.html"><h4>Nærmeste forhandler</h4></a>
-                    <a href="forhandler.html"><h4>Alle forhandlere</h4></a>
+                    <a href="#"><h4>Nærmeste forhandler</h4></a>
+                    <a href="404.html"><h4>Alle forhandlere</h4></a>
                  </div>
                  <div class="tredje">
                      <h3 class="overskriftfooter">Sociale medier</h3>
@@ -110,3 +103,4 @@
         </section>
     </footer>
     </html>
+

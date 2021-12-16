@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:wght@500&display=swap');
+/*font-family: 'Epilogue', sans-serif;*/
+
+
+/*root elementer for et bedre overblik i koden*/
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --darkblue: #39404B;
+  --lightblue: #ebf4ff;
+  --seablue: #7cbbe5;
+  --darkseablue: #1d6077;
+  --jollyred: #ee272e;
+
+  --font: 'Epilogue', sans-serif;
+
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+/*Baggrundfarve i main*/
+.bgfarve{
+  background-image: linear-gradient( white ,  #ebf4ff ,#ebf4ff);
+}
+
+/*Media rules for Iphone*/
+@media (max-width: 480px){
+  .bgforside{
+    width: 100%;
+    overflow: hidden;
+    height: auto;
+  }
+  .bg{
+    display: none;
+  }
+  .smag{
+    position: absolute;
+    font-family: var(--font);
+    font-size: 40px;
+    font-weight: 800;
+    font-style: italic;
+    animation: overskrift 1s;
+  }
+  
+}
+/*Media rules for Iphone*/
+@media (min-width: 481px){
+  .bgforside{
+    width: 100%;
+    overflow: hidden;
+    height: auto;
+  }
+  .bg{
+    display: none;
+  }
+  .smag{
+    position: absolute;
+    font-family: var(--font);
+    font-size: 50px;
+    font-weight: 800;
+    font-style: italic;
+    animation: overskrift 1s;
+  }
+
+}
+
+/*Media rules for ipad*/
+@media (min-width: 736px){
+  .tekstimg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .bg{
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    height: auto;
+  }
+  .bgforside{
+    display: none;
+  }
+  /*Animation på teksten når siden loader*/
+@keyframes overskrift{
+  from{
+      margin-right: 200px;
+      opacity: 0;
+      transform:rotateX(-10deg)
+  }
+  to{
+      opacity: 1;
+      transform: rotateX(0);
+  }
+}
+
+}
+/*Media rules for web*/
+@media (max-width: 1024px){
+  .mountain{
+    display: none;
+  
+  }
+  .around{
+    text-align: center;
+    margin-top: 100px;
+  }
+  .around2{
+    text-align: center;
+    margin-top: 100px;
+  }
+  .around3{
+    text-align: center;
+    margin-top: 100px;
+  }
+  .bg{
+    width: 100%;
+    overflow: hidden;
+    height: auto;
+  }
+
+  }
+/*Media rules for web*/
+@media (min-width: 1025px){
+
+  .tekstimg{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+    padding-bottom: 200px;
+  }
+  .mountain{
+    position: absolute;
+    bottom: 350px;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  .bg{
+    width: 100%;
+    overflow: hidden;
+    height: auto;
+  }
+  .smag{
+    position: absolute;
+    font-family: var(--font);
+    font-size: 100px;
+    font-weight: 1000;
+    font-style: italic;
+    animation: overskrift 1s;
+  }
+  /*Animation på teksten når siden loader (web og ipad)*/
+@keyframes overskrift{
+  from{
+      margin-right: 200px;
+      opacity: 0;
+      transform:rotateX(-10deg)
+  }
+  to{
+      opacity: 1;
+      transform: rotateX(0);
+  }
+}
+
+
+}
+
+
+.konkurrencebillede{
+  position: relative;
+}
+
+.nysmag{
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.knap{
+  text-decoration: none;
+  margin-top: 30px;
+  padding-bottom: 50px;
+}
+.findknap{
+  font-family:var(--font);
+  font-size: 16px;
+  text-decoration: none;
+  color: white;
+  padding: 10px 10px;
+  border-radius: 25px;
+  background-color: #39404B;
+  
+}
+
+.pil{
+  width: 100%;
+  height: 50px;
+  margin-top: 20px;
+  position: relative;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.pilned{
+  position: absolute;
+  width: 30px;
+  animation: pilned 2s linear infinite;
+  z-index: 100;
+  
+}
+
+/*Animation på pilen ned til læs mere knappen*/
+@keyframes pilned{
+  0% {
+      top: 0%;
+    }
+    50% {
+      top: 30%;
+   }
+    100% {
+      top: 0;    
+    }
+  }
+
+.underover{
+  font-size: 40px;
+  font-family: var(--font);
+  font-weight: 600;
+}
+.underunder{
+  font-size: 40px;
+  font-family: var(--font);
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.ml{
+  font-size: 30px;
+  font-family: var(--font);
+  font-weight: 600;
+  margin-top: 10px;
+  color: rgb(177, 177, 177);
+}
+.around{
+  height: auto;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.around2{
+  height: auto;
+  text-align: center;
+  z-index: 100;
+}
+
+.around3{
+  height: auto;
+  text-align: center;
+}
+.almcola{
+  width: 280px;
+}
+
+.julecola{
+  width: 310px;
+}
+
+.dietcola{
+  width: 350px;
+}
+
+
+.mg{
+  width: 50%;
+  
+}
+

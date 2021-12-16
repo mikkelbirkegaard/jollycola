@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:wght@500&display=swap');
+/*font-family: 'Epilogue', sans-serif;*/
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --darkblue: #39404B;
+  --lightblue: #ebf4ff;
+  --seablue: #7cbbe5;
+  --darkseablue: #1d6077;
+  --jollyred: #ee272e;
+  --kodegrey: #808080;
+
+  --font: 'Epilogue', sans-serif;
+
+}
+
+body{
+  position: relative;
+  z-index: -50;
+}
+
+@media (max-width: 480px){
+  .billeder{
+    display: none;
+  }
+  .danmark{
+    display: none;
+  }
+  .overdemalle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    justify-content: center;
+}
+
+
+  }
+
+  @media (min-width: 481px){
+    .billeder{
+      display: none;
+    }
+    .danmark{
+      display: none;
+    }
+    .overdemalle{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+  }
+
+  }
+@media (min-width: 736px){
+  .billeder{
+    display: none;
+  }
+  .danmark{
+    display: none;
+  }
+  .overdemalle{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.smocola{
+  padding-top: 50px;
+}
+
+
+}
+
+
+@media (min-width: 1025px){
+  .danmarkmobil{
+    display: none;
+  }
+  .billeder{
+    display: block;
+  }
+  .danmark{
+    display: block;
+  }
+  .overdemalle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 300px;
+}
+footer{
+  height: 200px;
+}
+.smocola{
+  padding-top: 200px;
+}
+
+}
+.overdemalle{
+  padding-top: 100px;
+}
+
+.tekst{
+    font-family: 'Epilogue', sans-serif;
+    text-align: center;
+}
+
+.smocola{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.billeder{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.monster{
+    position: absolute;
+    width: 600px;
+    z-index: -1;
+    opacity: 0.2;
+    right: 5%;
+}
+.bgfarve{
+  background-image: linear-gradient( white ,  #ebf4ff ,#ebf4ff);
+  z-index: -100;
+}
+
+.forhandler{
+    font-size: 45px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.almcola{
+  width: 100%;
+  max-width: 170px;
+}
+
+.dietcola{
+  width: 100%;
+  max-width: 220px;
+}
+
+.julecola{
+  width: 100%;
+  max-width: 190px;
+}
+
+.nummer{
+  font-size: 30px;
+  font-weight: 700;
+  font-style: italic;
+  margin-top: 30px;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 10px;
+  background-color: grey;
+  color: whitesmoke;
+  z-index: 1;
+}
+
+.postnummer{
+  padding-top: 50px;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+
+main{
+  position: relative;
+}
+
+.parent{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.prov{
+  width: 100%;
+}
+
+.bg{
+  width: 100%;
+  height: auto;
+}
+
+.danmark{
+  max-width: 600px;
+}
+
+.danmarkmobil{
+  max-width: 400px;
+  padding-top: 100px;
+}
+
+::placeholder{
+  color: whitesmoke;
+  text-align: center;
+}
+
+
+
+
+footer{
+  background: white;
+  font-family:'Epilogue', sans-serif;
+  width: 100%;
+}
+
+.bgfarve{
+  background-image: linear-gradient( white ,  #ebf4ff ,#ebf4ff);
+}
+
+.faceikon{
+  width: 25px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.instaikon{
+  width: 50px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.overskriftfooter{
+  font-size: 25px;
+  font-weight: 500;
+  margin-top: 30px;
+  margin-bottom: 20px;
+
+}
+.forste a{
+  text-decoration: none;
+  color: black;
+}
+.anden a{
+  text-decoration: none;
+  color: black;
+}
+.trejde a{
+  text-decoration: none;
+  color: black;
+
+}
+
+h4{
+  font-weight: 300;
+}
+
+/*fjerner den blå border-linje*/
+input:focus{
+  outline: none;
+}
+
+
+
+
