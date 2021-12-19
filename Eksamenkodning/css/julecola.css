@@ -20,6 +20,10 @@
   --font: 'Epilogue', sans-serif;
 
 }
+body{
+  position: relative;
+  z-index: -100;
+}
 
 .html{
   position: relative;
@@ -359,4 +363,9 @@ main{
   width: 100%;
   position: absolute;
   z-index: -10;
+}
+.linkitekst{
+  font-size: 16px;
+  color: #000000;
+  font-style: italic;
 }

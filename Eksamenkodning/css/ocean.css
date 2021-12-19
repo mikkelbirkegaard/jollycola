@@ -396,7 +396,7 @@
   }
   .skraldan{
     background: url(../images/skraldanimation.png);
-    height: 200vh;
+    height: 280vh;
     width: 100%;
     overflow: hidden;
     background-repeat: repeat;
@@ -405,6 +405,7 @@
     opacity: 0.2;
     z-index: -1;
     filter: brightness(50%);
+    background-position: center; 
 }
 
 /*Animation på skraldet i baggrunden*/

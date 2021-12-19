@@ -24,6 +24,10 @@
 .html{
   position: relative;
 }
+body{
+  position: relative;
+  z-index: -100;
+}
 
 
 /*Media rules for Iphone*/
